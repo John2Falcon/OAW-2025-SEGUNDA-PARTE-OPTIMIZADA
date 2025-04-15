@@ -29,18 +29,19 @@ El repositorio debe estar organizado en **entregas**. Para esto, utiliza el leng
 
 ---
 
-## 📋 Instrucciones de la Entrega 1
+## 📋 Instrucciones de la Entrega 2
 
-En esta primera entrega desarrollarán la primera versión de un lector Web de RSS feeds personalizable. 
-La aplicación deberá tener las siguiente funcionalidades:
+La segunda entrega del proyecto nos lleva a enfocarnos en los procesos de optimización mediante los métodos vistos en clase: ofuscamiento, minimización, compresión, entre otros.
+Para lograr esto, se utilizó una herramienta moderna de empaquetado llamada Vite, la cual permite desarrollar y generar versiones de producción de aplicaciones en React de forma eficiente. Esta herramienta se encargó automáticamente de aplicar optimizaciones al generar el build del proyecto.
+Acciones realizadas:
+•	Minimización de HTML, CSS y JavaScript: se eliminaron espacios en blanco, saltos de línea y caracteres innecesarios.
+•	Ofuscación del código: los archivos .js resultantes contienen identificadores abreviados y estructuras menos legibles, lo que ayuda a proteger la lógica del código.
+•	Compresión de archivos: Vite genera automáticamente archivos listos para producción, reduciendo el tamaño gracias al uso de algoritmos como gzip.
+•	Transpilación de TypeScript a JavaScript, permitiendo una ejecución directa en navegadores.
+•	Se generaron dos versiones del frontend:
+o	Una sin optimizar, útil para desarrollo y pruebas.
+o	Una optimizada, dentro de la carpeta dist, lista para despliegue.
 
-- El usuario definirá la url de los feeds que utilizará (uno o más).
-- La aplicación colectará todas las noticias y las almacenará en una base de datos.
-- El proceso de actualización de las noticias será activado por el usuario mediante un botón.
-- Las noticias deben presentar su fecha, título, url, descripción y categorías.
-- Cuando la página principal se presente listará las noticias ordenadas por fecha. El usuario puede ordenarlas por cualquier campo.
-- El usuario utilizará una caja de texto para buscar noticias que coincidan con el texto proporcionado.
-- 
 Utilicen imágenes y estilos para darle una apariencia atractiva al sitio. Podrán utilizar componentes, frameworks y cualquier biblioteca que consideren conveniente.
 Se recomienda PHP. NO CONSIDEREN NINGUN ASPECTO DE OPTIMIZACIÓN.
 
