@@ -12239,16 +12239,6 @@ function requireDist() {
   return dist;
 }
 requireDist();
-/**
- * react-router v7.5.0
- *
- * Copyright (c) Remix Software Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.md file in the root directory of this source tree.
- *
- * @license MIT
- */
 var PopStateEventType = "popstate";
 function createBrowserHistory(options = {}) {
   function createBrowserLocation(window2, globalHistory) {
@@ -13686,6 +13676,7 @@ function dedupeLinkDescriptors(descriptors, preloads) {
     return deduped;
   }, []);
 }
+var NO_BODY_STATUS_CODES = /* @__PURE__ */ new Set([100, 101, 204, 205]);
 function singleFetchUrl(reqUrl, basename) {
   let url = typeof reqUrl === "string" ? new URL(
     reqUrl,
@@ -13923,7 +13914,7 @@ function mergeRefs(...refs) {
 var isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
 try {
   if (isBrowser) {
-    window.__reactRouterVersion = "7.5.0";
+    window.__reactRouterVersion = "7.5.2";
   }
 } catch (e) {
 }
@@ -14291,7 +14282,11 @@ function useViewTransitionState(to, opts = {}) {
   return matchPath(path.pathname, nextPath) != null || matchPath(path.pathname, currentPath) != null;
 }
 new TextEncoder();
-const API_URL = "http://localhost/backend/routes/api.php";
+/* @__PURE__ */ new Set([
+  ...NO_BODY_STATUS_CODES,
+  304
+]);
+const API_URL = "http://localhost:8080/OAW-2025%201/backend/routes/api.php";
 const getFeeds = async () => {
   const response = await fetch(`${API_URL}?feeds`);
   const result = await response.json();
@@ -14522,6 +14517,6 @@ const App = () => {
   ] });
 };
 clientExports.createRoot(document.getElementById("root")).render(
-  /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) }) })
+  /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { basename: "/dist_original/", children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) }) })
 );
-//# sourceMappingURL=index-BUEUXUTi.js.map
+//# sourceMappingURL=index-B9o9SM4Q.js.map

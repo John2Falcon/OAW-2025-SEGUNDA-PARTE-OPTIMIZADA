@@ -1,6 +1,6 @@
 import { Feed, News, APIResponse } from '../types';
 
-const API_URL = 'http://localhost/backend/routes/api.php';
+const API_URL = 'http://localhost:8080/OAW-2025%201/backend/routes/api.php';
 
 export const getFeeds = async (): Promise<Feed[]> => {
   const response = await fetch(`${API_URL}?feeds`);

@@ -1,11 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    minify: false,         // Desactiva la minificación JS y CSS
-    sourcemap: true,       // Opcional: genera archivos .map para debugging
-    outDir: 'dist-original'  //Carpeta en donde se guarda el original
-  }
+  base: "/dist_prod/"
 })

@@ -3,14 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "tsc -b && vite build",
-  "build:original": "tsc -b && vite build --config vite.config.ts",
-  "build:prod": "tsc -b && vite build --config vite.config.prod.ts",
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:or": "vite build --config vite.config.or.ts",
+    "preview": "vite preview",
+    "preview:or": "vite preview --config vite.config.or.ts",
+    "lint": "eslint .",
+    "dev:or": "vite --config vite.config.or.ts"
+
+  },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "dompurify": "^3.2.4",
